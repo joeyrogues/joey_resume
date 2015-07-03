@@ -24,10 +24,6 @@
     padding: 15px;
 }
 
-.block {
-    display: block;
-}
-
 .experience-background {
     filter: blur(5px);
     opacity: 0.3;
