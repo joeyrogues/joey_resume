@@ -1,56 +1,61 @@
-@import url(http://fonts.googleapis.com/css?family=Share+Tech);
-
 .welcome-container {
+    display: table;
+
     width: 100%;
     height: 100%;
 }
 
-.background {
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
+.triggers {
+    position: absolute;
+    vertical-align: middle;
 
-    background-image: url("../images/background.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-color: black;
-    background-attachment: fixed;
-    background-position: center;
+    top: calc(50% - 201px);
+    left: calc(50% - 264px);
 
-    position:absolute;
-    width:100%;
-    height:100%;
-
-    z-index: -100;
+    width: 528px;
+    margin: auto;
 }
 
-.circle {
-    width: 200px;
+.trigger {
+    position: relative;
+    display: inline-block;
+
+    text-align: center;
+
+    width: 250px;
     height: 400px;
+    margin: 5px;
 
     border: 1px solid grey;
 
-    font-size: 45px;
+    font-size: 30px;
+
+    -webkit-transition: border-radius 0.5s;
+    transition: border-radius 0.5s;
 }
 
-.fancy-font {
-    font-family: 'Share Tech', sans-serif;
+.trigger:hover {
+    border-radius: 0 150px 0 0;
 }
 
-.align-center {
-    text-align: center;
+.inner-trigger {
+    padding: 15px 10px 15px 10px;
 }
 
-.align-center * {
-    line-height: 185px;
+h1.trigger-title {
+    font-size: 30px;
 }
 
-.position-absolute#education-trigger {
+.trigger-background {
+    filter: blur(5px);
+    opacity: 0.4;
+
+    background-size: 100% 100%;
+    background-color: grey;
+
     position: absolute;
-}
+    width: 100%;
+    height: 100%;
 
-.position-absolute#welcome-trigger {
-
+    z-index: -50;
 }

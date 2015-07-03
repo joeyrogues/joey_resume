@@ -11,6 +11,7 @@
     "angular-loader": "~1.4.0",
     "angular-mocks": "~1.4.0",
     "pleasejs": "~0.4.2",
-    "angular-animate": "~1.4.1"
+    "angular-animate": "~1.4.1",
+    "socialicious": "*"
   }
 }
