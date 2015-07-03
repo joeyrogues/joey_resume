@@ -1,0 +1,29 @@
+<div class="experiences">
+    <h1 class="experiences-title">Experience</h1>
+
+    <div class="experience" ng-repeat="experience in experiences">
+        <div class="experience-background"></div>
+
+        <div class="experience-inner">
+            <span class="block experience-header company-header fancy">
+                <span class="company">{{experience.company}}</span>, <span class="city">{{experience.city}}</span>
+            </span>
+
+            <span class="block experience-header role-header italic">
+                <span class="role">{{experience.role}}</span>
+            </span>
+
+            <span class="block experience-header date-header top-right-corner fancy">
+                <span class="dates">{{experience.startDate | date:'MMM y'}} - {{experience.endDate | date:'MMM y'}}</span>
+            </span>
+
+            <hr/>
+
+            <div class="block"></div>
+                <div class="summary">
+                    {{experience.summary}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

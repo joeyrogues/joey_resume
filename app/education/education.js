@@ -10,7 +10,5 @@ angular.module('joey_resume.education', ['ngRoute'])
     }])
 
     .controller('EducationCtrl', ['$scope', function ($scope) {
-        $scope.colors = Please.make_color({
-            colors_returned: 4
-        });
+
     }]);

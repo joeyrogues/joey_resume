@@ -26,24 +26,20 @@
     height: 400px;
     margin: 5px;
 
-    border: 1px solid grey;
-
     font-size: 30px;
 
-    -webkit-transition: border-radius 0.5s;
-    transition: border-radius 0.5s;
+    border: 1px solid grey;
+
+    -webkit-transition: border 0.7s;
+    transition: border 0.7s;
 }
 
 .trigger:hover {
-    border-radius: 0 150px 0 0;
+    border: 1px solid black;
 }
 
 .inner-trigger {
     padding: 15px 10px 15px 10px;
-}
-
-h1.trigger-title {
-    font-size: 30px;
 }
 
 .trigger-background {
