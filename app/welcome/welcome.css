@@ -56,18 +56,18 @@
     z-index: -50;
 }
 
-.picture {
-    width: 150px;
+.perso-picture {
+    width: 128px;
     height: auto;
 
     position: absolute;
 
-    border-radius: 10px;
-    border: 3px white dotted;
+    border: white solid;
+    border-width: 5px 5px 22px 5px;
 }
 
-.picture#picture1 {
-    top: 220px;
+.perso-picture#picture1 {
+    top: 228px;
     left: 35px;
 
     -webkit-transform: rotate(-5deg);
@@ -79,9 +79,9 @@
     z-index: 100;
 }
 
-.picture#picture2 {
-    top: 90px;
-    left: 70px;
+.perso-picture#picture2 {
+    top: 96px;
+    left: 40px;
 
     -webkit-transform: rotate(-10deg);
     -moz-transform:    rotate(-10deg);
@@ -92,15 +92,32 @@
     z-index: 50;
 }
 
-.picture#picture3 {
-    top: 160px;
-    left: 50px;
+.perso-picture#picture3 {
+    top: 172px;
+    left: 90px;
 
-    -webkit-transform: rotate(20deg);
-    -moz-transform:    rotate(20deg);
-    -ms-transform:     rotate(20deg);
-    -o-transform:      rotate(20deg);
-    transform:         rotate(20deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform:    rotate(5deg);
+    -ms-transform:     rotate(5deg);
+    -o-transform:      rotate(5deg);
+    transform:         rotate(5deg);
 
     z-index: 50;
+}
+
+.education-picture#diploma {
+    position: absolute;
+
+    top: 40%;
+    left: 26%;
+}
+
+.experience-picture#bulb {
+    position: absolute;
+
+    top: 40%;
+    left: 26%;
+
+    width: 128px;
+    height: auto;
 }

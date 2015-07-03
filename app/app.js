@@ -5,6 +5,7 @@ angular.module('joey_resume', [
     'ngAnimate',
 
     'joey_resume.welcome',
+    'joey_cv.perso',
     'joey_resume.education',
     'joey_resume.experience'
 ])
