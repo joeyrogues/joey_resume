@@ -2,7 +2,7 @@
     <h1 class="experiences-title"><a href="#/welcome">Back</a></h1>
     <h1 class="experiences-title">Experience</h1>
 
-    <div class="experience" ng-repeat="experience in experiences">
+    <div class="experience" ng-repeat="experience in experiences | orderBy:'startDate':true">
         <div class="experience-background"></div>
 
         <div class="experience-inner">

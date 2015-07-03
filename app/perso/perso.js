@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('joey_cv.perso', ['ngRoute'])
+angular.module('joey_resume.perso', ['ngRoute'])
 
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/perso', {
