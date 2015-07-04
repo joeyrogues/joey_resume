@@ -1,5 +1,5 @@
 <div class="educations">
-    <h1 class="educations-title"><a href="#/welcome">Back</a></h1>
+    <h1 class="educations-title"><a href="#/welcome"><img class="back-button" src="images/back2.png" />Back</a></h1>
     <h1 class="educations-title">Education</h1>
 
     <div class="education" ng-repeat="education in educations | orderBy:'startDate':true">
@@ -20,9 +20,10 @@
 
             <hr/>
 
-            <div class="block"></div>
-            <div class="summary">
-                {{education.summary}}
+            <div class="block">
+                <div class="summary">
+                    {{education.summary}}
+                </div>
             </div>
         </div>
     </div>

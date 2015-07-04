@@ -67,14 +67,14 @@
 }
 
 .perso-picture#picture1 {
-    top: 228px;
-    left: 35px;
+    top: 198px;
+    left: 68px;
 
-    -webkit-transform: rotate(-5deg);
-    -moz-transform:    rotate(-5deg);
-    -ms-transform:     rotate(-5deg);
-    -o-transform:      rotate(-5deg);
-    transform:         rotate(-5deg);
+    -webkit-transform: rotate(16deg);
+    -moz-transform:    rotate(16deg);
+    -ms-transform:     rotate(16deg);
+    -o-transform:      rotate(16deg);
+    transform:         rotate(16deg);
 
     z-index: 100;
 }
@@ -88,19 +88,6 @@
     -ms-transform:     rotate(-10deg);
     -o-transform:      rotate(-10deg);
     transform:         rotate(-10deg);
-
-    z-index: 50;
-}
-
-.perso-picture#picture3 {
-    top: 172px;
-    left: 90px;
-
-    -webkit-transform: rotate(5deg);
-    -moz-transform:    rotate(5deg);
-    -ms-transform:     rotate(5deg);
-    -o-transform:      rotate(5deg);
-    transform:         rotate(5deg);
 
     z-index: 50;
 }

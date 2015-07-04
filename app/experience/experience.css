@@ -16,10 +16,6 @@
     font-size: large;
 }
 
-.experience:hover {
-    border: 1px solid black;
-}
-
 .experience-inner {
     padding: 15px;
 }
@@ -54,4 +50,8 @@
 
     top: 0px;
     right: 0px;
+}
+
+.back-button {
+    padding-right: 6px;
 }
