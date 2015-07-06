@@ -80,6 +80,18 @@
     height: 44px;
 
     padding: 0 5px;
+
+    -webkit-transition: 0.3s;
+    -moz-transition:    0.3s;
+    -ms-transition:     0.3s;
+    -o-transition:      0.3s;
+    transition:         0.3s;
+}
+
+.tag-icon:hover {
+    -ms-transform:     rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    transform:         rotate(-20deg);
 }
 
 .tag-label {
