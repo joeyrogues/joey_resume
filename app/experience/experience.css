@@ -55,3 +55,41 @@
 .back-button {
     padding-right: 6px;
 }
+
+.columns {
+    width: 100%;
+
+    position: absolute;
+    vertical-align: middle;
+}
+
+.column {
+    position: relative;
+    display: inline-block;
+
+    text-align: center;
+
+    margin: 0;
+    padding: 10px 0 10px 0;
+
+    width: 33%;
+}
+
+.tag-icon {
+    width: auto;
+    height: 44px;
+
+    padding: 0 5px;
+}
+
+.tag-label {
+    font-style: italic;
+}
+
+.summary {
+    margin: 0;
+    padding: 5px 0;
+
+    text-align: justify;
+    text-justify: inter-word;
+}

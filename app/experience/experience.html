@@ -1,23 +1,30 @@
 <div class="experience-background"></div>
 
 <div class="experience-inner">
-            <span class="block experience-header company-header fancy">
-                <span class="company">{{experience.company}}</span>, <span class="city">{{experience.city}}</span>
-            </span>
+    <span class="block experience-header company-header fancy">
+        <span class="company">{{experience.company}}</span>, <span class="city">{{experience.city}}</span>
+    </span>
 
-            <span class="block experience-header role-header italic">
-                <span class="role">{{experience.role}}</span>
-            </span>
+    <span class="block experience-header role-header italic">
+        <span class="role">{{experience.role}}</span>
+    </span>
 
-            <span class="block experience-header date-header top-right-corner fancy">
-                <span class="dates">{{experience.startDate | date:'MMM y'}} - {{experience.endDate | date:'MMM y'}}</span>
-            </span>
+    <span class="block experience-header date-header top-right-corner fancy">
+        <span class="dates">{{experience.startDate | date:'MMM y'}} - {{experience.endDate | date:'MMM y'}}</span>
+    </span>
 
     <hr/>
 
     <div class="block">
-        <div class="summary">
-            {{experience.summary}}
+        <div class="summary" ng-bind-html="experience.summary | breakOnDots | sanitize"></div>
+    </div>
+
+    <hr/>
+
+    <div class="columns">
+        <div ng-repeat="tag in experience.tags" class="column">
+            <img ng-src="images/{{tag.icon}}" class="tag-icon"/><br/>
+            <span class="tag-label">{{tag.label}}</span>
         </div>
     </div>
 </div>

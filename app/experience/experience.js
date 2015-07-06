@@ -18,7 +18,18 @@ angular.module('joey_resume.experience', ['ngRoute'])
                 endDate:   '2015-02-25',
                 role:      'Software engineer intern',
                 summary:   '\
-                    This internship dealt with software quality of web application. Topics: unit tests, integration tests, design patterns, Continuous Integration, technical debt, Angularjs, PostgreSql, Java'
+                    This internship dealt with software quality of web application. Topics: unit tests, integration tests, design patterns, Continuous Integration, technical debt, Angularjs, PostgreSql, Java',
+                tags: [
+                    { label: 'JS HTML CSS',   icon: 'html-css-javascript-icon.png' },
+                    { label: 'Ruby on Rails', icon: 'rails-icon.png' },
+                    { label: 'jQuery',        icon: 'jquery-icon.png' },
+                    { label: 'Jenkins',       icon: 'jenkins-icon.png' },
+                    { label: 'Sonarqube',     icon: 'sonarqube-icon.png' },
+                    { label: 'Github',        icon: 'github-icon.png' },
+                    { label: 'Angular',       icon: 'angular-icon.png' },
+                    { label: 'Postgres',      icon: 'postgres-icon.png' },
+                    { label: 'Java',          icon: 'java-icon.png' }
+                ]
             }),
             new Experience({
                 city:      'Paris',
@@ -31,7 +42,12 @@ angular.module('joey_resume.experience', ['ngRoute'])
                     I conducted discussions about the needs and the technologies to use.\
                     I developed a plug in implementing the previous discussions using Ruby on Rails and JavaScript within a Redmine platform.\
                     I centralized management and quality indicators sometimes retrieved from continuous integration solutions web APIs or computed in accordance to the Inovia management methods.\
-                    I put in place passive devices and dashboards designed to display critical information and assist the engineers.'
+                    I put in place passive devices and dashboards designed to display critical information and assist the engineers.',
+                tags: [
+                    { label: 'JS / HTML / CSS', icon: 'html-css-javascript-icon.png' },
+                    { label: 'Ruby on Rails',   icon: 'rails-icon.png' },
+                    { label: 'jQuery',          icon: 'jquery-icon.png' }
+                ]
             }),
             new Experience({
                 city:      'Paris',
@@ -41,7 +57,12 @@ angular.module('joey_resume.experience', ['ngRoute'])
                 role:      'Software engineer intern',
                 summary:   '\
                     My job was to design, program and test Ruby on Rails, jQuery and CSS features.\
-                    The testing was made using RSpec and the Test Driven Development convention.'
+                    The testing was made using RSpec and the Test Driven Development convention.',
+                tags: [
+                    { label: 'JS HTML CSS',   icon: 'html-css-javascript-icon.png' },
+                    { label: 'Ruby on Rails', icon: 'rails-icon.png' },
+                    { label: 'jQuery',        icon: 'jquery-icon.png' }
+                ]
             }),
             new Experience({
                 city:      'Paris',
@@ -51,7 +72,11 @@ angular.module('joey_resume.experience', ['ngRoute'])
                 role:      'Programmer intern',
                 summary:   '\
                     I was responsible for the functional and technical specification, design, development and test for a Java application.\
-                    I was using the V-Model software development process, my job was also to gather the needs.'
+                    I was using the V-Model software development process, my job was also to gather the needs.',
+                tags: [
+                    { label: 'UML',  icon: 'uml-icon.png' },
+                    { label: 'Java', icon: 'java-icon.png' }
+                ]
             })
         ]
     }])
@@ -66,6 +91,8 @@ angular.module('joey_resume.experience', ['ngRoute'])
 
             this.role = params.role;
             this.summary = params.summary;
+
+            this.tags = params.tags;
         };
 
         return Experience;

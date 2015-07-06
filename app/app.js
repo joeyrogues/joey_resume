@@ -12,4 +12,16 @@ angular.module('joey_resume', [
 
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.otherwise({redirectTo: '/welcome'});
+    }])
+
+    .filter('breakOnDots', [function() {
+        return function(input) {
+            return input.replace(/\. /g, '.<br/>');
+        };
+    }])
+
+    .filter("sanitize", ['$sce', function($sce) {
+        return function(htmlCode){
+            return $sce.trustAsHtml(htmlCode);
+        }
     }]);
