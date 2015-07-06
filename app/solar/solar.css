@@ -1,0 +1,278 @@
+.system {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    background: black;
+}
+
+.orbit {
+    position: absolute;
+    z-index: 50;
+
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+}
+
+.planet {
+    position: absolute;
+    z-index: 100;
+
+    margin: -20px;
+}
+
+#sun {
+    width: 150px;
+    height: 150px;
+
+    top: calc(50% - 150px /2);
+    left: calc(50% - 150px /2);
+}
+
+@keyframes mercuryRot {
+    from {
+        transform: rotate(0deg)
+        translate(-100px)
+        rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg)
+        translate(-100px)
+        rotate(-360deg);
+    }
+}
+
+#mercury {
+    width: 36px;
+    height: 36px;
+
+    top: calc(50% - 36px / 2);
+    left: calc(50% - 36px / 2);
+
+    animation: mercuryRot 1s infinite linear;
+}
+
+#mercury-orbit {
+    width: 200px;
+    height: 200px;
+
+    top: calc(50% - 120px);
+    left: calc(50% - 120px);
+}
+
+@keyframes venusRot {
+    from {
+        transform: rotate(0deg)
+        translate(-150px)
+        rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg)
+        translate(-150px)
+        rotate(-360deg);
+    }
+}
+
+#venus {
+    width: 46px;
+    height: 46px;
+
+    top: calc(50% - 46px / 2);
+    left: calc(50% - 46px / 2);
+
+    animation: venusRot 9s infinite linear;
+}
+
+#venus-orbit {
+    width: 300px;
+    height: 300px;
+
+    top: calc(50% - 170px);
+    left: calc(50% - 170px);
+}
+
+@keyframes earthRot {
+    from {
+        transform: rotate(0deg)
+        translate(-200px)
+        rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg)
+        translate(-200px)
+        rotate(-360deg);
+    }
+}
+
+#earth {
+    width: 50px;
+    height: 50px;
+
+    top: calc(50% - 50px / 2);
+    left: calc(50% - 50px / 2);
+
+    animation: earthRot 12s infinite linear;
+}
+
+#earth-orbit {
+    width: 400px;
+    height: 400px;
+
+    top: calc(50% - 220px);
+    left: calc(50% - 220px);
+}
+
+@keyframes marsRot {
+    from {
+        transform: rotate(0deg)
+        translate(-250px)
+        rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg)
+        translate(-250px)
+        rotate(-360deg);
+    }
+}
+
+#mars {
+    width: 48px;
+    height: 48px;
+
+    top: calc(50% - 48px / 2);
+    left: calc(50% - 48px / 2);
+
+    animation: marsRot 15s infinite linear;
+}
+
+#mars-orbit {
+    width: 500px;
+    height: 500px;
+
+    top: calc(50% - 270px);
+    left: calc(50% - 270px);
+}
+
+@keyframes jupiterRot {
+    from {
+        transform: rotate(0deg)
+        translate(-326px)
+        rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg)
+        translate(-326px)
+        rotate(-360deg);
+    }
+}
+
+#jupiter {
+    width: 96px;
+    height: 96px;
+
+    top: calc(50% - 96px / 2);
+    left: calc(50% - 96px / 2);
+
+    animation: jupiterRot 21s infinite linear;
+}
+
+#jupiter-orbit {
+    width: 652px;
+    height: 652px;
+
+    top: calc(50% - 344px);
+    left: calc(50% - 344px);
+}
+
+@keyframes saturnRot {
+    from {
+        transform: rotate(0deg)
+        translate(-470px)
+        rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg)
+        translate(-470px)
+        rotate(-360deg);
+    }
+}
+
+#saturn {
+    width: 150px;
+    height: 90px;
+
+    top: calc(50% - 90px / 2);
+    left: calc(50% - 150px / 2);
+
+    animation: saturnRot 24s infinite linear;
+}
+
+#saturn-orbit {
+    width: calc(436px * 2 + 150px / 2);
+    height: calc(471px * 2);
+
+    top: calc(50% - 490px);
+    left: calc(50% - 490px);
+}
+
+@keyframes uranusRot {
+    from {
+        transform: rotate(0deg)
+        translate(-610px)
+        rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg)
+        translate(-610px)
+        rotate(-360deg);
+    }
+}
+
+#uranus {
+    width: 80px;
+    height: 80px;
+
+    top: calc(50% - 90px / 2);
+    left: calc(50% - 80px / 2);
+
+    animation: uranusRot 26s infinite linear;
+}
+
+#uranus-orbit {
+    width: calc(608px * 2);
+    height: calc(608px * 2);
+
+    top: calc(50% - 628px);
+    left: calc(50% - 628px);
+}
+
+@keyframes neptuneRot {
+    from {
+        transform: rotate(0deg)
+        translate(-700px)
+        rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg)
+        translate(-700px)
+        rotate(-360deg);
+    }
+}
+
+#neptune {
+    width: 80px;
+    height: 80px;
+
+    top: calc(50% - 90px / 2);
+    left: calc(50% - 90px / 2);
+
+    animation: neptuneRot 28s infinite linear;
+}
+
+#neptune-orbit {
+    width: calc(698px * 2);
+    height: calc(698px * 2);
+
+    top: calc(50% - 720px);
+    left: calc(50% - 720px);
+}

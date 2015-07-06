@@ -9,7 +9,7 @@
     position: absolute;
     vertical-align: middle;
 
-    top: calc(50% - 201px);
+    top: calc(50% - 270px);
     left: calc(50% - 3 * 132px);
 
     width: 794px;
@@ -22,16 +22,23 @@
 
     text-align: center;
 
-    width: 250px;
-    height: 400px;
-    margin: 5px;
-
     font-size: 30px;
 
     border: 1px solid grey;
 
     -webkit-transition: border 0.7s;
     transition: border 0.7s;
+}
+
+.long-trigger {
+    width: 782px;
+    margin: 5px;
+}
+
+.tall-trigger {
+    width: 250px;
+    height: 400px;
+    margin: 5px;
 }
 
 .trigger:hover {

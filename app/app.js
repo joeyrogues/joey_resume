@@ -7,7 +7,10 @@ angular.module('joey_resume', [
     'joey_resume.welcome',
     'joey_resume.perso',
     'joey_resume.education',
-    'joey_resume.experience'
+    'joey_resume.experience',
+
+    'joey_resume.production',
+    'joey_resume.solar'
 ])
 
     .config(['$routeProvider', function ($routeProvider) {
