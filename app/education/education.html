@@ -1,11 +1,6 @@
-<div class="educations">
-    <h1 class="educations-title"><a href="#/welcome"><img class="back-button" src="images/back.png" />Back</a></h1>
-    <h1 class="educations-title">Education</h1>
+<div class="education-background"></div>
 
-    <div class="education" ng-repeat="education in educations | orderBy:'startDate':true">
-        <div class="education-background"></div>
-
-        <div class="education-inner">
+<div class="education-inner">
             <span class="block education-header school-header fancy">
                 <span class="company">{{education.school}}</span>, <span class="city">{{education.city}}</span>
             </span>
@@ -18,14 +13,11 @@
                 <span class="dates">{{education.startDate | date:'MMM y'}} - {{education.endDate | date:'MMM y'}}</span>
             </span>
 
-            <hr/>
+    <hr/>
 
-            <div class="block">
-                <div class="summary">
-                    {{education.summary}}
-                </div>
-            </div>
+    <div class="block">
+        <div class="summary">
+            {{education.summary}}
         </div>
     </div>
-</div>
 </div>

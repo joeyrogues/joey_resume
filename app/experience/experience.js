@@ -4,7 +4,7 @@ angular.module('joey_resume.experience', ['ngRoute'])
 
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/experience', {
-            templateUrl: 'experience/experience.html',
+            templateUrl: 'experience/experiences.html',
             controller: 'ExperienceCtrl'
         });
     }])
@@ -69,4 +69,14 @@ angular.module('joey_resume.experience', ['ngRoute'])
         };
 
         return Experience;
+    }])
+
+    .directive('experience', [function() {
+        return {
+            restrict: 'A',
+            templateUrl: 'experience/experience.html',
+            scope: {
+                experience: '=experience'
+            }
+        }
     }]);

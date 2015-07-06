@@ -4,7 +4,7 @@ angular.module('joey_resume.education', ['ngRoute'])
 
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/education', {
-            templateUrl: 'education/education.html',
+            templateUrl: 'education/educations.html',
             controller: 'EducationCtrl'
         });
     }])
@@ -51,4 +51,14 @@ angular.module('joey_resume.education', ['ngRoute'])
         };
 
         return Education;
+    }])
+
+    .directive('education', [function() {
+        return {
+            restrict: 'A',
+            templateUrl: 'education/education.html',
+            scope: {
+                education: '=education'
+            }
+        }
     }]);
